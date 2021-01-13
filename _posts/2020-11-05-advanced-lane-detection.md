@@ -3,6 +3,7 @@ layout: post
 title: Advanced Lane Detection
 date: 2020-11-05
 author: Awais Khan
+summary: Identifying lanes with curvature and different lighting conditions.
 feature-img: "assets/img/pexels/autonomous-driving.jpeg"
 tags: [OpenCV, Computer Vision, Python, Self Driving Cars]
 ---
