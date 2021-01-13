@@ -66,9 +66,6 @@
     {% endunless %}
     {% seo %}
 
-    <!-- RSS -->
-<!--     {% feed_meta %} -->
-
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="{{ page.title | default: site.title }}">
     <meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 | default: site.header_text}}">
