@@ -3,6 +3,7 @@ layout: post
 title:  "Radar Chart Python Package"
 date:   2020-02-05
 author: Awais Khan
+summary: A simple python package to quickly create radar charts.
 feature-img: "assets/img/pexels/data-vis.jpg"
 tags: [Python, Data Visualisation, Matplotlib]
 ---
