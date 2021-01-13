@@ -22,7 +22,7 @@
                   {% if site.excerpt == "truncate" %}
                      {{ post.content | strip_html | truncate: '250' | escape }}
                   {% else %}
-                     {{ post.excerpt | strip_html | escape }}
+                     {{ post.excerpt | strip_html | truncate: '250' | escape }}
                   {% endif %}
               </div>
           {% endif %}
