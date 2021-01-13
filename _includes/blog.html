@@ -17,14 +17,10 @@
             </h1>
             {% include post_info.html author=post.author date=post.date %}
           </header>
-          {% if site.excerpt or site.theme_settings.excerpt %}
-              <div class="excerpt">
-                  {% if site.excerpt == "truncate" %}
-                     {{ post.content | strip_html | truncate: '250' | escape }}
-                  {% else %}
-                     {{ post.excerpt | strip_html | truncate: '250' | escape }}
-                  {% endif %}
-              </div>
+          {% if post.summary %}
+            <p>{{ post.summary | strip_html | truncatewords:20 }}</p>
+          {% else %}
+            <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
           {% endif %}
       </span>
     </div>
